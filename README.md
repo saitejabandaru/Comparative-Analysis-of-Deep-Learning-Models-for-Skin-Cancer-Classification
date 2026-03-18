@@ -61,7 +61,7 @@ Best Model: **Xception (85.63%)**
 ## 🚀 How to Run
 
 1. Install dependencies: pip install -r requirements.txt
-2. Download dataset: kagglehub.dataset_download("kmader/skin-cancer-mnist-ham10000")
+2. Download dataset: kagglehub.dataset_download("kmader/skin-cancer-mnist-ham10000") (Not uploaded due to size constraints ~ 2GB)
 3. Run the notebooks: CNN.ipynb, ResNet50_v2.ipynb, InceptionV3.ipynb, Xception.ipynb, InceptionResnetV2
 
 ---
@@ -83,7 +83,7 @@ An interactive **Streamlit application** is included to demonstrate real-time sk
   - Predicted class
   - Class description
   - Confidence score
-  - Top-3 predictions with probabilities
+  - All class predictions with probabilities
 - Lightweight and easy to run locally
 
 ---
@@ -93,4 +93,36 @@ An interactive **Streamlit application** is included to demonstrate real-time sk
 ![Streamlit UI](sample_test_images/Streamlit_web_ui.png)
 
 ---
+## 🧪 Sample Test Images (Unseen Data)
 
+To provide a **fair and reproducible demonstration**, the repository includes a small set of sample test images:
+
+📁 `sample_test_images/`
+
+These images:
+
+- ✅ Are **strictly selected from the held-out test set (`test_df`)**
+- ❌ Were **never used during training or validation**
+- 🎯 Represent all 7 skin lesion classes
+- 🧪 Are used for validating model predictions in a controlled setting
+
+> This ensures that all demonstrated predictions are performed on **unseen data**, avoiding data leakage and maintaining evaluation integrity.
+
+---
+
+## 🚀 Running the Streamlit App
+
+```bash
+streamlit run app.py
+```
+- Then open the browser at http://localhost:8501
+
+---
+
+### 🧠 Trained Model File
+
+The trained model file is also excluded from the repository due to size constraints.
+
+Download the trained Xception model from:
+
+👉 xception_best_model2.txt
