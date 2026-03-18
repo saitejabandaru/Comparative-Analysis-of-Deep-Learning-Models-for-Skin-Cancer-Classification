@@ -1,0 +1,24 @@
+# Virtual env
+venv/
+
+# Dataset
+ham10000/
+
+# Model file (too large)
+*.h5
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Optional: test scripts
+build_test_split.py
+test_app.py
+test_df.csv
