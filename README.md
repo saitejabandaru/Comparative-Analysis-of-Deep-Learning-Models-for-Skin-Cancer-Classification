@@ -73,3 +73,24 @@ Best Model: **Xception (85.63%)**
 - Advanced architectures performed better on minority classes
 
 ---
+## 🌐 Streamlit Web Application
+
+An interactive **Streamlit application** is included to demonstrate real-time skin lesion classification using the best-performing model (**Xception**).
+
+### ✨ Features
+- Upload a dermoscopic image and get instant predictions
+- Displays:
+  - Predicted class
+  - Class description
+  - Confidence score
+  - Top-3 predictions with probabilities
+- Lightweight and easy to run locally
+
+---
+
+### 🖼️ Application Preview
+
+![Streamlit UI](sample_test_images/Streamlit_web_ui.png)
+
+---
+
